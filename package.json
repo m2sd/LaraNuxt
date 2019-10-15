@@ -1,0 +1,50 @@
+{
+    "private": true,
+    "scripts": {
+        "nuxt:dev": "nuxt",
+        "nuxt:build": "nuxt build",
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@nuxtjs/eslint-config": "^1.1.2",
+        "@nuxtjs/eslint-module": "^1.1.0",
+        "@nuxtjs/redirect-module": "^0.3.1",
+        "@nuxtjs/vuetify": "^1.9.0",
+        "@vue/test-utils": "^1.0.0-beta.29",
+        "axios": "^0.19",
+        "babel-eslint": "^10.0.3",
+        "babel-jest": "^24.9.0",
+        "cross-env": "^5.1",
+        "cz-conventional-changelog": "^3.0.2",
+        "eslint": "^6.5.1",
+        "eslint-config-prettier": "^6.4.0",
+        "eslint-plugin-nuxt": "^0.4.3",
+        "eslint-plugin-prettier": "^3.1.1",
+        "husky": "^3.0.9",
+        "jest": "^24.9.0",
+        "laravel-mix": "^4.0.7",
+        "lint-staged": "^9.4.2",
+        "lodash": "^4.17.13",
+        "nuxt-laravel": "^4.2.0-beta.7",
+        "prettier": "^1.18.2",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "vue-jest": "^3.0.5"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.6.0",
+        "nuxt": "^2.10.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
