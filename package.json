@@ -1,20 +1,24 @@
 {
     "private": true,
     "scripts": {
-        "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
-        "lint:fix": "npm run lint -- --fix",
-        "lint:check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
         "dev": "npm run mix:dev && npm run nuxt:dev",
         "build": "npm run mix:build && npm run nuxt:build",
+        "lint": "eslint --ext .ts,.js,.vue .",
+        "lint:fix": "npm run lint -- --fix",
+        "lint:check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+        "test": "npm run mix:test && npm run nuxt:test",
         "mix:dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "mix:watch": "npm run dev -- --watch",
         "mix:watch:poll": "npm run watch -- --watch-poll",
         "mix:hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "mix:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "mix:test": "echo no test specified",
         "nuxt:dev": "nuxt-ts",
-        "nuxt:build": "nuxt-ts build"
+        "nuxt:build": "nuxt-ts build",
+        "nuxt:test": "jest"
     },
     "devDependencies": {
+        "@babel/core": "^7.6.4",
         "@nuxt/typescript-build": "^0.3.1",
         "@nuxt/typescript-runtime": "^0.2.1",
         "@nuxtjs/eslint-config": "^1.1.2",
@@ -22,10 +26,10 @@
         "@nuxtjs/eslint-module": "^1.1.0",
         "@nuxtjs/redirect-module": "^0.3.1",
         "@nuxtjs/vuetify": "^1.9.0",
+        "@types/jest": "^24.0.19",
         "@vue/test-utils": "^1.0.0-beta.29",
         "axios": "^0.19",
-        "babel-eslint": "^10.0.3",
-        "babel-jest": "^24.9.0",
+        "babel-core": "^7.0.0-bridge.0",
         "cross-env": "^5.1",
         "cz-conventional-changelog": "^3.0.2",
         "eslint": "^6.5.1",
@@ -43,6 +47,7 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "ts-jest": "^24.1.0",
         "vue-jest": "^3.0.5"
     },
     "dependencies": {
