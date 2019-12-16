@@ -32,6 +32,8 @@
     },
     "exclude": [
         "vendor",
-        "node_modules"
+        "node_modules",
+        "resources/nuxt/static",
+        "public"
     ]
 }
