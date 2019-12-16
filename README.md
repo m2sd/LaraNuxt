@@ -1,6 +1,6 @@
 # Nuxt Laravel Starter
 
-Laravel framework with integrated NuxtJs support, preconfigured for eslint, jest and vuetify.
+Laravel framework with integrated NuxtJs support, pre configured for eslint, jest, vuetify and typescript.
 
 ## Scripts
 
