@@ -2,6 +2,8 @@
 
 Laravel framework with integrated NuxtJs support, preconfigured for eslint, jest and vuetify.
 
+For typescript support checkout the [`typescript`](https://github.com/m2sd/nuxt-laravel-starter/tree/typescript) branch.
+
 ## Scripts
 
 ```bash
