@@ -17,11 +17,22 @@
           </p>
           <p>
             For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
+            <a
+              href="https://vuetifyjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              documentation </a
+            >.
           </p>
           <p>
             If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
+            <a
+              href="https://chat.vuetifyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="chat"
+            >
               discord </a
             >.
           </p>
@@ -30,6 +41,7 @@
             <a
               href="https://github.com/vuetifyjs/vuetify/issues"
               target="_blank"
+              rel="noopener noreferrer"
               title="contribute"
             >
               issue board </a
@@ -43,19 +55,25 @@
             <em><small>&mdash; John Leider</small></em>
           </div>
           <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Nuxt Documentation
           </a>
           <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Nuxt GitHub
           </a>
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
+          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -63,13 +81,5 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+export default {}
 </script>
