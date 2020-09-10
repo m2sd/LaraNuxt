@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b759e2e74551e9eabf19ddc564816f17",
+    "content-hash": "1453908974f5016a736681327bb24527",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -760,16 +760,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.0.1",
+            "version": "v8.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f93dae9c16186178be75363a14347ad092e3c7a7"
+                "reference": "a4c365f9a964f1d9346a662b426476dc1bffc660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f93dae9c16186178be75363a14347ad092e3c7a7",
-                "reference": "f93dae9c16186178be75363a14347ad092e3c7a7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a4c365f9a964f1d9346a662b426476dc1bffc660",
+                "reference": "a4c365f9a964f1d9346a662b426476dc1bffc660",
                 "shasum": ""
             },
             "require": {
@@ -919,7 +919,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-09-09T13:09:02+00:00"
+            "time": "2020-09-09T22:26:00+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1263,16 +1263,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.39.1",
+            "version": "2.39.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7af467873250583cc967a59ee9df29fabab193c1"
+                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7af467873250583cc967a59ee9df29fabab193c1",
-                "reference": "7af467873250583cc967a59ee9df29fabab193c1",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/326efde1bc09077a26cb77f6e2e32e13f06c27f2",
+                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2",
                 "shasum": ""
             },
             "require": {
@@ -1338,7 +1338,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-09-04T13:11:37+00:00"
+            "time": "2020-09-10T12:16:42+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1455,16 +1455,16 @@
         },
         {
             "name": "pallares/laravel-nuxt",
-            "version": "dev-patch-1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GautierDele/laravel-nuxt.git",
-                "reference": "856946efef8c9d66ae31377fb7d9d377c813f0b7"
+                "url": "https://github.com/skyrpex/laravel-nuxt.git",
+                "reference": "0822ab53781baa66f9706e5e620ab3697cfe53ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GautierDele/laravel-nuxt/zipball/856946efef8c9d66ae31377fb7d9d377c813f0b7",
-                "reference": "856946efef8c9d66ae31377fb7d9d377c813f0b7",
+                "url": "https://api.github.com/repos/skyrpex/laravel-nuxt/zipball/0822ab53781baa66f9706e5e620ab3697cfe53ea",
+                "reference": "0822ab53781baa66f9706e5e620ab3697cfe53ea",
                 "shasum": ""
             },
             "require": {
@@ -1484,6 +1484,7 @@
                     "Pallares\\LaravelNuxt\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1498,15 +1499,12 @@
             "description": "Build a SPA with Laravel and Nuxt",
             "homepage": "https://github.com/skyrpex/laravel-nuxt",
             "keywords": [
+                "SPA",
                 "laravel",
                 "nuxt",
-                "spa",
                 "vue"
             ],
-            "support": {
-                "source": "https://github.com/GautierDele/laravel-nuxt/tree/patch-1"
-            },
-            "time": "2020-09-09T13:08:15+00:00"
+            "time": "2020-09-10T08:14:42+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -6352,9 +6350,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "pallares/laravel-nuxt": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
