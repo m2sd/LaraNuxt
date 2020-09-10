@@ -20,7 +20,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "pallares/laravel-nuxt": "^1.4"
+        "pallares/laravel-nuxt": "^1.5"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
