@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://laravel.com"><img alt="Laravel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" width="92" height="92" /></a>
   <a href="https://vuejs.org"><img alt="Vue.js" src="https://vuejs.org/images/logo.png" width="92" height="92" /></a>
+  <a href="https://nuxtjs.org/"><img alt="Nuxt.js" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Nuxt-js.png" width="92" height="92" /></a>
   <a href="https://vuetifyjs.com/"><img alt="Vuetify" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" width="92" height="92" /></a>
   <a href="https://eslint.org/"><img alt="ESLint" src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg" width="92" height="92" /></a>
   <a href="https://jestjs.io/"><img alt="Jest" src="https://miro.medium.com/max/600/1*i37IyHf6vnhqWIA9osxU3w.png" width="92" height="92" /></a>
