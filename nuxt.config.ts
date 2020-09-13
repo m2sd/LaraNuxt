@@ -1,9 +1,9 @@
-import { Configuration } from '@nuxt/types'
+import { NuxtConfig } from '@nuxt/types'
 
 import colors from 'vuetify/es5/util/colors'
 
-const config: Configuration = {
-  mode: 'spa',
+const config: NuxtConfig = {
+  ssr: false,
   srcDir: 'resources/nuxt',
 
   /*
@@ -67,11 +67,7 @@ const config: Configuration = {
    */
   axios: {},
 
-  typescript: {
-    typeCheck: {
-      eslint: true
-    }
-  },
+  typescript: {},
 
   /*
    ** vuetify module configuration

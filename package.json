@@ -1,70 +1,80 @@
 {
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "dev": "npm run mix:dev && npm run nuxt:dev",
         "build": "npm run mix:build && npm run nuxt:build",
-        "lint": "eslint --ext .ts,.js,.vue .",
+        "lint": "eslint --ext .js,.vue .",
         "lint:fix": "npm run lint -- --fix",
         "lint:check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
         "test": "npm run mix:test && npm run nuxt:test",
         "mix:dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "mix:watch": "npm run dev -- --watch",
-        "mix:watch:poll": "npm run watch -- --watch-poll",
+        "mix:watch": "npm run mix:dev -- --watch",
+        "mix:watch:poll": "npm run mix:watch -- --watch-poll",
         "mix:hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "mix:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "mix:test": "echo no test specified",
+        "mix:test": "echo no test",
         "nuxt:dev": "nuxt-ts",
         "nuxt:build": "nuxt-ts build",
-        "nuxt:test": "jest"
+        "nuxt:test": "jest",
+        "release": "standard-version"
     },
     "devDependencies": {
-        "@babel/core": "^7.9.0",
-        "@nuxt/typescript-build": "^0.6.1",
-        "@nuxt/typescript-runtime": "^0.2.10",
-        "@nuxtjs/eslint-config": "^1.1.2",
-        "@nuxtjs/eslint-config-typescript": "^0.1.3",
-        "@nuxtjs/eslint-module": "^1.1.0",
-        "@nuxtjs/redirect-module": "^0.3.1",
-        "@nuxtjs/vuetify": "^1.11.0",
-        "@types/jest": "^24.9.1",
-        "@vue/test-utils": "^1.0.0-beta.32",
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@nuxt/types": "^2.14.5",
+        "@nuxt/typescript-build": "^2.0.3",
+        "@nuxt/typescript-runtime": "^2.0.0",
+        "@nuxtjs/axios": "^5.12.0",
+        "@nuxtjs/eslint-config": "^2.0.2",
+        "@nuxtjs/eslint-config-typescript": "^3.0.0",
+        "@nuxtjs/eslint-module": "^1.2.0",
+        "@nuxtjs/vuetify": "^1.11.2",
+        "@vue/test-utils": "^1.1.0",
         "axios": "^0.19.2",
         "babel-core": "^7.0.0-bridge.0",
-        "cross-env": "^5.1",
-        "cz-conventional-changelog": "^3.1.0",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^25.5.1",
+        "cross-env": "^7.0",
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.1",
+        "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-nuxt": "^0.5.2",
-        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-prettier": "^3.1.4",
         "husky": "^3.1.0",
-        "jest": "^25.2.4",
-        "laravel-mix": "^4.0.7",
+        "jest": "^25.5.4",
+        "laravel-mix": "^5.0.5",
         "lint-staged": "^9.5.0",
-        "lodash": "^4.17.13",
-        "nuxt-laravel": "^4.2.2",
-        "nuxt-property-decorator": "^2.5.1",
+        "lodash": "^4.17.20",
+        "nuxt": "^2.14.5",
+        "nuxt-laravel": "^4.2.9",
+        "nuxt-property-decorator": "^2.7.2",
         "prettier": "^1.19.1",
-        "resolve-url-loader": "^2.3.1",
-        "sass": "^1.26.3",
-        "sass-loader": "^7.1.0",
-        "ts-jest": "^25.3.0",
-        "vue-jest": "^3.0.5"
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.26.10",
+        "sass-loader": "^8.0.0",
+        "standard-version": "^9.0.0",
+        "ts-jest": "^26.3.0",
+        "vue-jest": "^3.0.6"
     },
-    "dependencies": {
-        "@nuxtjs/axios": "^5.9.7",
-        "nuxt": "^2.12.2"
-    },
+    "dependencies": {},
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
     },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
     "lint-staged": {
-        "*.{[jt]s,vue}": "eslint"
+        "*.{js,vue}": "eslint"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     }
 }
