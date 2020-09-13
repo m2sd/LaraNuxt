@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use M2S\LaravelNuxt\Facades\Nuxt;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/app{path}', '\\'.Pallares\LaravelNuxt\Controllers\NuxtController::class)->name('nuxt')->where('path', '.*');
+Nuxt::route('{path?}')->name('nuxt')->where('path', '.*');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1453908974f5016a736681327bb24527",
+    "content-hash": "c4e611e4664b9683e279c100161926d7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -760,16 +760,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.0.3",
+            "version": "v8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a4c365f9a964f1d9346a662b426476dc1bffc660"
+                "reference": "d769a497a20e4a374ff7454dde7eee65145e3659"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a4c365f9a964f1d9346a662b426476dc1bffc660",
-                "reference": "a4c365f9a964f1d9346a662b426476dc1bffc660",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d769a497a20e4a374ff7454dde7eee65145e3659",
+                "reference": "d769a497a20e4a374ff7454dde7eee65145e3659",
                 "shasum": ""
             },
             "require": {
@@ -919,7 +919,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-09-09T22:26:00+00:00"
+            "time": "2020-09-11T14:24:58+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1179,6 +1179,68 @@
             ],
             "description": "Mime-type detection for Flysystem",
             "time": "2020-08-09T10:34:01+00:00"
+        },
+        {
+            "name": "m2s/laravel-nuxt",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/m2sd/laravel-nuxt.git",
+                "reference": "5d5c6110ffeb1eddd469c470432811a03189bc6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/m2sd/laravel-nuxt/zipball/5d5c6110ffeb1eddd469c470432811a03189bc6b",
+                "reference": "5d5c6110ffeb1eddd469c470432811a03189bc6b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0",
+                "laravel/framework": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "pedrotroller/php-cs-custom-fixer": "^2.23",
+                "phpmd/phpmd": "^2.8",
+                "phpro/grumphp": "^0.18.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "M2S\\LaravelNuxt\\LaravelNuxtServiceProvider"
+                    ],
+                    "aliases": {
+                        "Nuxt": "M2S\\LaravelNuxt\\Facades\\Nuxt"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "M2S\\LaravelNuxt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Marcenich",
+                    "email": "info@m-squared-solutions.it"
+                }
+            ],
+            "description": "NuxtJS framework integration for Laravel",
+            "keywords": [
+                "SPA",
+                "laravel",
+                "nuxt",
+                "nuxtjs",
+                "pwa",
+                "typescript"
+            ],
+            "time": "2020-09-13T09:04:24+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1452,59 +1514,6 @@
                 "serialize"
             ],
             "time": "2020-09-06T17:02:15+00:00"
-        },
-        {
-            "name": "pallares/laravel-nuxt",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/skyrpex/laravel-nuxt.git",
-                "reference": "0822ab53781baa66f9706e5e620ab3697cfe53ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/skyrpex/laravel-nuxt/zipball/0822ab53781baa66f9706e5e620ab3697cfe53ea",
-                "reference": "0822ab53781baa66f9706e5e620ab3697cfe53ea",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
-                "php": ">=7.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Pallares\\LaravelNuxt\\LaravelNuxtServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Pallares\\LaravelNuxt\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cristian Pallarés",
-                    "email": "cristian@pallares.io",
-                    "homepage": "https://pallares.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Build a SPA with Laravel and Nuxt",
-            "homepage": "https://github.com/skyrpex/laravel-nuxt",
-            "keywords": [
-                "SPA",
-                "laravel",
-                "nuxt",
-                "vue"
-            ],
-            "time": "2020-09-10T08:14:42+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2009,16 +2018,16 @@
         },
         {
             "name": "ramsey/collection",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/collection.git",
-                "reference": "044184884e3c803e4cbb6451386cb71562939b18"
+                "reference": "24d93aefb2cd786b7edd9f45b554aea20b28b9b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/collection/zipball/044184884e3c803e4cbb6451386cb71562939b18",
-                "reference": "044184884e3c803e4cbb6451386cb71562939b18",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/24d93aefb2cd786b7edd9f45b554aea20b28b9b1",
+                "reference": "24d93aefb2cd786b7edd9f45b554aea20b28b9b1",
                 "shasum": ""
             },
             "require": {
@@ -2068,7 +2077,13 @@
                 "queue",
                 "set"
             ],
-            "time": "2020-08-11T00:57:21+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-10T20:58:17+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -5298,16 +5313,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.3.8",
+            "version": "9.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c"
+                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c",
-                "reference": "93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/919333f2d046a89f9238f15d09f17a8f0baa5cc2",
+                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2",
                 "shasum": ""
             },
             "require": {
@@ -5321,7 +5336,7 @@
                 "myclabs/deep-copy": "^1.10.1",
                 "phar-io/manifest": "^2.0.1",
                 "phar-io/version": "^3.0.2",
-                "php": "^7.3 || ^8.0",
+                "php": ">=7.3",
                 "phpspec/prophecy": "^1.11.1",
                 "phpunit/php-code-coverage": "^9.1.5",
                 "phpunit/php-file-iterator": "^3.0.4",
@@ -5383,7 +5398,17 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2020-08-27T06:30:58+00:00"
+            "funding": [
+                {
+                    "url": "https://phpunit.de/donate.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-12T09:34:39+00:00"
         },
         {
             "name": "scrivo/highlight.php",
@@ -6356,5 +6381,6 @@
     "platform": {
         "php": "^7.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
