@@ -1,4 +1,5 @@
 {
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "dev": "npm run mix:dev && npm run nuxt:dev",
@@ -15,9 +16,12 @@
         "mix:test": "echo no test",
         "nuxt:dev": "nuxt",
         "nuxt:build": "nuxt build",
-        "nuxt:test": "jest"
+        "nuxt:test": "jest",
+        "release": "standard-version"
     },
     "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
         "@nuxtjs/axios": "^5.12.0",
         "@nuxtjs/eslint-config": "^2.0.2",
         "@nuxtjs/eslint-module": "^1.2.0",
@@ -44,6 +48,7 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.26.10",
         "sass-loader": "^8.0.0",
+        "standard-version": "^9.0.0",
         "vue-jest": "^3.0.6"
     },
     "dependencies": {},
@@ -52,12 +57,18 @@
             "path": "./node_modules/cz-conventional-changelog"
         }
     },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
     "lint-staged": {
         "*.{js,vue}": "eslint"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     }
 }

@@ -55,4 +55,8 @@ npm run nuxt:dev
 npm run nuxt:build
 # perform tests
 npm run nuxt:test
+
+# *** Development ***
+# cut a new release
+npm run release
 ```

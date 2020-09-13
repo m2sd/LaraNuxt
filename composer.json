@@ -1,5 +1,6 @@
 {
     "name": "m2s/nuxt-laravel-starter",
+    "version": "1.0.0",
     "type": "project",
     "description": "Laravel framework with integrated NuxtJs support, preconfigured for eslint, jest and vuetify.",
     "keywords": [
